@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karikku Street Food</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <h1> Karikku Street Food</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#hours">Opening Time</a>
+      <a href="#contact">Contact</a>
+      <a href="#order">Order Online</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Authentic Kerala Food, Made Fresh in Front of You</h2>
+    <p>From street snacks to signature dishes – right from our food truck!</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <p>Click below to view our full menu</p>
+    <button id="menuBtn" class="order-btn">📋 View Menu</button>
+
+    <!-- Hidden Menu Popup -->
+    <div id="menuModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+       <img src="C:\Users\sivad\Pictures\KST v2\images\g.jpg" alt="Karikku Street Food Menu" class="menu-image"> 
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Karikku</h2>
+    <p>Karikku Street Food is a dream project of two passionate food lovers. 
+       The name <strong>Karikku</strong> comes from tender coconut – a true symbol of Kerala. 
+       From this food truck, we bring you authentic South Indian (Kerala) food along with our signature creations, served fresh and made right in front of you.</p>
+  </section>
+
+  <!-- Opening Time -->
+  <section id="hours">
+    <h2>Opening Time</h2>
+    <p>🕒 Daily: 6:00 PM – 10:00 PM</p>
+    <p>📍 Location: <a href="https://maps.app.goo.gl/tgfctChah8MecJFR9" target="_blank">View on Google Maps</a></p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:karikkustreetfood@gmail.com">karikkustreetfood@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917349625505">07349 625505</a></p>
+    <p>Follow us on Instagram: <a href="https://www.instagram.com/karikkustreetfd?igsh=MWhubXdkcnpyeDN6Zg==" target="_blank">@karikkustreetfd</a></p>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Karikku Street Food. All rights reserved.</p>
+  </footer>
+
+  <!-- Script for Modal -->
+  <script>
+    const modal = document.getElementById("menuModal");
+    const btn = document.getElementById("menuBtn");
+    const span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = () => modal.style.display = "block";
+    span.onclick = () => modal.style.display = "none";
+    window.onclick = (event) => { if(event.target == modal) modal.style.display = "none"; }
+  </script>
+</body>
+</html>
